@@ -22,9 +22,10 @@ html
 <script data-main="app.js" src="static_modules/require.js"></script>
 ```
 
-That's all folks !
+Require.js is configured, you can just focus on your Javascript.
 
-Require.js is already configured inside `static_modules/require.js`, you can just focus on your Javascript.
+**That's all folks !**
+
 
 
 Configuration
@@ -46,15 +47,17 @@ package.json
 
 Configurations from [.bowerrc](http://bower.io/docs/config/) are available in `package.json > config > bower`
 
-express static: `...`
+express static example: `...`
 
 
 How it works
 ------------
 
 ```shell
-borrower init
-# It will register a npm `postinstall` hook in your `package.json` to run Bower on every install.
+$ borrower init
 ```
 
+It will register a npm `postinstall` hook in your `package.json` to run Bower and configure Require on every `npm install`.
+
+Require.js is configured inside `static_modules/require.js` and updated at each install run.
 
