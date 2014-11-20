@@ -44,9 +44,8 @@ package.json
     }
 }
 ```
-you may configure available config in .bowerrc package.json > config > bower
 
-[.bowerrc](http://bower.io/docs/config/) Don't worry about config, just use defaults are goods.
+Configurations from [.bowerrc](http://bower.io/docs/config/) are available in `package.json > config > bower`
 
 express static: `...`
 
@@ -56,13 +55,7 @@ How it works
 
 ```shell
 borrower init
-# It will register a npm `postinstall` hook in your `package.json` to run Bower.
-
-
-#
-# And save dependency in `staticDependencies` in your package.js
-
-echo -e "\nstatic_modules/" >> .gitingore
+# It will register a npm `postinstall` hook in your `package.json` to run Bower on every install.
 ```
 
 
