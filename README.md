@@ -8,22 +8,21 @@ Forget complexity of Require.js config, don't worry about running Bower install.
 Usage
 -----
 
-Run
-
 ```shell
-npm install borrower --save
+$ npm install borrower --save
 
-node_modules/.bin/borrower install jquery --save
+$ node_modules/.bin/borrower install jquery --save
 ```
 
 It will install Bower Components in `static_modules/` and save dependency in `package.json`.
 
-
-Then in your html:
+html
 
 ```html
 <script data-main="app.js" src="static_modules/require.js"></script>
 ```
+
+That's all folks !
 
 Require.js is already configured inside `static_modules/require.js`, you can just focus on your Javascript.
 
