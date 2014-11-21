@@ -1,6 +1,6 @@
 {
   "name": "borrower",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Forget complexity of Require.js config, don't worry about running Bower install.",
   "main": "src/borrower.js",
   "scripts": {
