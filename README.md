@@ -2,6 +2,8 @@
 Borrower
 ========
 
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/j-san/borrower?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Forget complexity of Require.js config, don't worry about running Bower install.
 
 
