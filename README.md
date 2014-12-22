@@ -6,6 +6,7 @@ Borrower
 
 Forget complexity of Require.js config, don't worry about running Bower install.
 
+**This project is a work in progress.**
 
 Usage
 -----

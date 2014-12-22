@@ -5,7 +5,7 @@
   "main": "src/borrower.js",
   "scripts": {
     "test": "jshint lib/ bin/",
-    "postinstall": "borrower init"
+    "postinstall": "bin/cli init"
   },
   "author": "Jonathan Sanchez",
   "license": "MIT",
