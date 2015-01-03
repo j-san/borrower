@@ -42,7 +42,11 @@ package.json
     ...
     config: {
         bower: {
-            ...
+            directory: 'static_modules',  // name of the folfder containing dependencies
+            cwd: '',                      // where static modules must be installed
+            baseUrl: ''                   // location of the ducoment root
+                                          // an absolute path from this location will be used in requirejs config
+                                          // if empty, a relative path will be used
         }
     }
 }

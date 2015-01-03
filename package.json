@@ -4,8 +4,8 @@
   "description": "Forget complexity of Require.js config, don't worry about running Bower install.",
   "main": "src/borrower.js",
   "scripts": {
-    "test": "jshint lib/ bin/",
-    "postinstall": "bin/cli.js init"
+    "test": "jshint lib/ bin/ && mocha --harmony",
+    "postinstall": "bin/cli.js init && borrower install"
   },
   "author": "Jonathan Sanchez",
   "license": "MIT",
@@ -23,16 +23,22 @@
     "commander": "^2.5.0",
     "lodash": "^2.4.1",
     "q": "^1.1.1",
-    "requirejs": "^2.1.15"
+    "requirejs": "^2.1.15",
+    "thunkify": "^2.1.2"
   },
   "devDependencies": {
-    "jshint": "^2.5.10"
+    "chai": "^1.10.0",
+    "co-mocha": "^1.1.0",
+    "jshint": "^2.5.10",
+    "mz": "^1.2.1",
+    "rimraf": "^2.2.8"
   },
   "peerDependencies": {
     "bower": "^1.x"
   },
   "jshintConfig": {
     "curly": true,
+    "debug": true,
     "eqnull": true,
     "eqeqeq": true,
     "undef": true,
@@ -40,6 +46,7 @@
     "node": true,
     "devel": true,
     "esnext": true,
+    "noyield": true,
     "maxcomplexity": 5,
     "globals": {
       "describe": false,
