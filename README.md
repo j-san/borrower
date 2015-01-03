@@ -3,10 +3,14 @@ Borrower
 ========
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/j-san/borrower?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build Status](https://travis-ci.org/j-san/borrower.png?branch=master)](https://travis-ci.org/j-san/borrower)
+[![Dependency Status](https://david-dm.org/j-san/borrower.png)](https://david-dm.org/j-san/borrower)
 
 Forget complexity of Require.js config, don't worry about running Bower install.
 
-**This project is a work in progress.**
+**Note: this project is a work in progress.**
+
+The goal is to keep all configurations in a single configuration file and a working enviromnemnt with a single install command.
 
 Usage
 -----

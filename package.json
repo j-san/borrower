@@ -5,7 +5,7 @@
   "main": "src/borrower.js",
   "scripts": {
     "test": "jshint lib/ bin/ && mocha --harmony",
-    "postinstall": "bin/cli.js init && borrower install"
+    "postinstall": "bin/cli.js init"
   },
   "author": "Jonathan Sanchez",
   "license": "MIT",
