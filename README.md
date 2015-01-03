@@ -10,7 +10,7 @@ Forget complexity of Require.js config, don't worry about running Bower install.
 
 **Note: this project is a work in progress.**
 
-The goal is to keep all configurations in a single configuration file and a working enviromnemnt with a single install command.
+The goal is to keep a single configuration file and a working enviromnemnt with a single install command.
 
 Usage
 -----
