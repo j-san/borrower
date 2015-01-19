@@ -49,12 +49,12 @@
     "noyield": true,
     "maxcomplexity": 5,
     "globals": {
-      "describe": false,
-      "it": false,
-      "before": false,
-      "beforeEach": false,
-      "after": false,
-      "afterEach": false
+      "describe": true,
+      "it": true,
+      "before": true,
+      "after": true,
+      "beforeEach": true,
+      "afterEach": true
     }
   }
 }
