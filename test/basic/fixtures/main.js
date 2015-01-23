@@ -1,3 +1,4 @@
 define(['highlightjs'], function (hljs) {
-    hljs.initHighlightingOnLoad();
+    console.log(hljs);
+    hljs.initHighlighting();
 });

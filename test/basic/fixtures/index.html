@@ -3,12 +3,9 @@
 <head>
     <title>Basic Borrower Example</title>
     <meta charset="utf-8" />
-    <script src="static_modules/require.js"></script>
     <link rel="stylesheet" href="static_modules/highlightjs/styles/default.css">
 </head>
 <body>
-    <script src="static_modules/require.js" data-main="main"></script>
-
     <h1>Basic Borrower Example</h1>
     <p>Install this example (terminal):</p>
     <pre><code class="sh">
@@ -21,7 +18,7 @@
     npm i borrower --save
     ./node_modules/.bin/borrower install highlightjs --save
     edit index.html
-    # put in the source of this page
+    # put-in the source of this page
     </code></pre>
 
     <p>Clean:</p>
@@ -29,5 +26,14 @@
     rm -rf node_modules
     rm -rf static_modules
     </code></pre>
+
+    <p>example:</p>
+    <pre><code class="javascript">
+    define(['highlightjs'], function (hljs) {
+        hljs.initHighlighting();
+    });
+    </code></pre>
+
+    <script src="static_modules/require.js" data-main="main"></script>
 </body>
 </html>

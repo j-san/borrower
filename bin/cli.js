@@ -20,4 +20,9 @@ program.command('install [pkgs...]')
         borrower.install(pkgs, command.save);
     });
 
+program.command('build <input> <output>')
+    .action(function (input, output) {
+        borrower.build(input, output);
+    });
+
 program.parse(process.argv);

@@ -22,7 +22,7 @@ describe('basic project', function () {
         var content = yield fs.readFile(__dirname + '/fixtures/static_modules/require.js');
         content = content.toString();
         content.should.include('"highlightjs":"static_modules/highlightjs/highlight');
-        content.should.not.include('"baseUrl":"');
+        content.should.include('"baseUrl":""');
     });
 
     afterEach(function *() {
