@@ -10,15 +10,19 @@ Forget complexity of Require.js config, don't worry about running Bower install.
 
 **Note: this project is a work in progress.**
 
-The goal is to keep a single configuration file and a working enviromnemnt with a single install command.
+Goals:
+
+- One single configuration file.
+- Install everything with a single command.
+- No compile / watch required
 
 Usage
 -----
 
 ```shell
-$ npm install borrower --save
+$ sudo npm install -g bower borrower; npm install borrower --save
 
-$ node_modules/.bin/borrower install jquery --save
+$ borrower install jquery --save
 ```
 
 It will install Bower Components in `static_modules/` and save dependency in `package.json`.
@@ -66,6 +70,7 @@ How it works
 
 ```shell
 $ borrower init
+$ borrower install requirejs-text requirejs-domready
 ```
 
 It will register a npm `postinstall` hook in your `package.json` to run Bower and configure Require on every `npm install`.
