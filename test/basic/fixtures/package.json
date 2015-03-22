@@ -15,6 +15,7 @@
   },
   "staticDependencies": {
     "highlightjs": "*",
-    "backbone": "*"
+    "backbone": "*",
+    "requirejs-text": "*"
   }
 }
